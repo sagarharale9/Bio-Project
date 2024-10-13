@@ -28,7 +28,8 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  /* text-decoration: none; */
+  text-underline-offset: var(--background);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -46,16 +47,60 @@ a {
 }
 .name{
   font-size: x-large;
+  /* color: aquamarine; */
 }
 .bio-options{
   font-size: larger;
   display: flex;
   justify-content: space-around;
   width: 30%;
+  color: red;
 }
 .content{
-  padding: 6rem 8rem;
+  padding: 5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+.profile img{
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
 }
 .about strong{
   font-size: 45px;
+  color: blanchedalmond;
+}
+.bio-content{
+  width: 90%;
+}
+@media only screen and (max-width: 600px) {
+  .name{
+    font-size: x-large;
+  }
+  .profile img{
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+  }
+  .content{
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  .about strong{
+    font-size: 20px;
+  }
+  .bio-content{
+    width: 95%;
+    font-size: 15px;
+  }
+  .bio-options{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+   
+  }
+ 
 }
